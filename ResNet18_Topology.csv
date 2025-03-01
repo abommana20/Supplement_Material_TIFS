@@ -1,0 +1,32 @@
+Layer,Type,Activation,Parameters
+Conv1,Convolution,ReLU,"in_channels=3, out_channels=64, kernel_size=3, stride=1, padding=1, bias=False"
+BatchNorm1,Batch Normalization,None,num_features=64
+ReLU1,Non-linearity,ReLU,inplace=True
+Layer1_Block1_Conv1,Convolution,ReLU,"in_channels=64, out_channels=64, kernel_size=3, stride=1, padding=1, bias=False"
+Layer1_Block1_BN1,Batch Normalization,None,num_features=64
+Layer1_Block1_Conv2,Convolution,None,"in_channels=64, out_channels=64, kernel_size=3, stride=1, padding=1, bias=False"
+Layer1_Block1_BN2,Batch Normalization,None,num_features=64
+Layer1_Block1_ReLU,Non-linearity,ReLU,inplace=True
+Layer2_Block1_Conv1,Convolution,ReLU,"in_channels=64, out_channels=128, kernel_size=3, stride=2, padding=1, bias=False"
+Layer2_Block1_BN1,Batch Normalization,None,num_features=128
+Layer2_Block1_Conv2,Convolution,None,"in_channels=128, out_channels=128, kernel_size=3, stride=1, padding=1, bias=False"
+Layer2_Block1_BN2,Batch Normalization,None,num_features=128
+Layer2_Block1_Shortcut_Conv,Convolution,None,"in_channels=64, out_channels=128, kernel_size=1, stride=2, bias=False"
+Layer2_Block1_Shortcut_BN,Batch Normalization,None,num_features=128
+Layer2_Block1_ReLU,Non-linearity,ReLU,inplace=True
+Layer3_Block1_Conv1,Convolution,ReLU,"in_channels=128, out_channels=256, kernel_size=3, stride=2, padding=1, bias=False"
+Layer3_Block1_BN1,Batch Normalization,None,num_features=256
+Layer3_Block1_Conv2,Convolution,None,"in_channels=256, out_channels=256, kernel_size=3, stride=1, padding=1, bias=False"
+Layer3_Block1_BN2,Batch Normalization,None,num_features=256
+Layer3_Block1_Shortcut_Conv,Convolution,None,"in_channels=128, out_channels=256, kernel_size=1, stride=2, bias=False"
+Layer3_Block1_Shortcut_BN,Batch Normalization,None,num_features=256
+Layer3_Block1_ReLU,Non-linearity,ReLU,inplace=True
+Layer4_Block1_Conv1,Convolution,ReLU,"in_channels=256, out_channels=512, kernel_size=3, stride=2, padding=1, bias=False"
+Layer4_Block1_BN1,Batch Normalization,None,num_features=512
+Layer4_Block1_Conv2,Convolution,None,"in_channels=512, out_channels=512, kernel_size=3, stride=1, padding=1, bias=False"
+Layer4_Block1_BN2,Batch Normalization,None,num_features=512
+Layer4_Block1_Shortcut_Conv,Convolution,None,"in_channels=256, out_channels=512, kernel_size=1, stride=2, bias=False"
+Layer4_Block1_Shortcut_BN,Batch Normalization,None,num_features=512
+Layer4_Block1_ReLU,Non-linearity,ReLU,inplace=True
+AvgPool,Average Pooling,None,global average pooling
+FC,Fully Connected,None,"in_features=512, out_features=10, bias=True"

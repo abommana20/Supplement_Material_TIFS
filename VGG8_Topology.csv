@@ -1,0 +1,20 @@
+Layer,Type,Activation,Parameters
+Conv1,Convolution,ReLU,"in_channels=3, out_channels=64, kernel_size=3, padding=1"
+BatchNorm1,Batch Normalization,None,num_features=64
+Conv2,Convolution,ReLU,"in_channels=64, out_channels=64, kernel_size=3, padding=1"
+BatchNorm2,Batch Normalization,None,num_features=64
+MaxPool1,Max Pooling,Max-Pooling,"kernel_size=2, stride=2"
+Conv3,Convolution,ReLU,"in_channels=64, out_channels=128, kernel_size=3, padding=1"
+BatchNorm3,Batch Normalization,None,num_features=128
+Conv4,Convolution,ReLU,"in_channels=128, out_channels=128, kernel_size=3, padding=1"
+BatchNorm4,Batch Normalization,None,num_features=128
+MaxPool2,Max Pooling,Max-Pooling,"kernel_size=2, stride=2"
+Conv5,Convolution,ReLU,"in_channels=128, out_channels=256, kernel_size=3, padding=1"
+BatchNorm5,Batch Normalization,None,num_features=256
+Conv6,Convolution,ReLU,"in_channels=256, out_channels=256, kernel_size=3, padding=1"
+BatchNorm6,Batch Normalization,None,num_features=256
+MaxPool3,Max Pooling,Max-Pooling,"kernel_size=2, stride=2"
+Dropout1,Dropout,None,p=0.5
+FC1,Fully Connected,ReLU,"in_features=256*4*4, out_features=512"
+Dropout2,Dropout,None,p=0.5
+FC2,Fully Connected,None,"in_features=512, out_features=10"

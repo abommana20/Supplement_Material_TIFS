@@ -1,0 +1,120 @@
+Layer,Type,Activation,Parameters
+Conv1,Convolution,None,"in_channels=3, out_channels=24, kernel_size=3, stride=1, padding=1, bias=False"
+DenseBlock1_Layer1_BN1,Batch Normalization,None,num_features=24
+DenseBlock1_Layer1_ReLU1,Non-linearity,ReLU,inplace=True
+DenseBlock1_Layer1_Conv1,Convolution,None,"in_channels=24, out_channels=48, kernel_size=1, stride=1, bias=False"
+DenseBlock1_Layer1_BN2,Batch Normalization,None,num_features=48
+DenseBlock1_Layer1_ReLU2,Non-linearity,ReLU,inplace=True
+DenseBlock1_Layer1_Conv2,Convolution,None,"in_channels=48, out_channels=12, kernel_size=3, stride=1, padding=1, bias=False"
+DenseBlock1_Layer2_BN1,Batch Normalization,None,num_features=36
+DenseBlock1_Layer2_ReLU1,Non-linearity,ReLU,inplace=True
+DenseBlock1_Layer2_Conv1,Convolution,None,"in_channels=36, out_channels=48, kernel_size=1, stride=1, bias=False"
+DenseBlock1_Layer2_BN2,Batch Normalization,None,num_features=48
+DenseBlock1_Layer2_ReLU2,Non-linearity,ReLU,inplace=True
+DenseBlock1_Layer2_Conv2,Convolution,None,"in_channels=48, out_channels=12, kernel_size=3, stride=1, padding=1, bias=False"
+DenseBlock1_Layer3_BN1,Batch Normalization,None,num_features=48
+DenseBlock1_Layer3_ReLU1,Non-linearity,ReLU,inplace=True
+DenseBlock1_Layer3_Conv1,Convolution,None,"in_channels=48, out_channels=48, kernel_size=1, stride=1, bias=False"
+DenseBlock1_Layer3_BN2,Batch Normalization,None,num_features=48
+DenseBlock1_Layer3_ReLU2,Non-linearity,ReLU,inplace=True
+DenseBlock1_Layer3_Conv2,Convolution,None,"in_channels=48, out_channels=12, kernel_size=3, stride=1, padding=1, bias=False"
+DenseBlock1_Layer4_BN1,Batch Normalization,None,num_features=60
+DenseBlock1_Layer4_ReLU1,Non-linearity,ReLU,inplace=True
+DenseBlock1_Layer4_Conv1,Convolution,None,"in_channels=60, out_channels=48, kernel_size=1, stride=1, bias=False"
+DenseBlock1_Layer4_BN2,Batch Normalization,None,num_features=48
+DenseBlock1_Layer4_ReLU2,Non-linearity,ReLU,inplace=True
+DenseBlock1_Layer4_Conv2,Convolution,None,"in_channels=48, out_channels=12, kernel_size=3, stride=1, padding=1, bias=False"
+DenseBlock1_Layer5_BN1,Batch Normalization,None,num_features=72
+DenseBlock1_Layer5_ReLU1,Non-linearity,ReLU,inplace=True
+DenseBlock1_Layer5_Conv1,Convolution,None,"in_channels=72, out_channels=48, kernel_size=1, stride=1, bias=False"
+DenseBlock1_Layer5_BN2,Batch Normalization,None,num_features=48
+DenseBlock1_Layer5_ReLU2,Non-linearity,ReLU,inplace=True
+DenseBlock1_Layer5_Conv2,Convolution,None,"in_channels=48, out_channels=12, kernel_size=3, stride=1, padding=1, bias=False"
+DenseBlock1_Layer6_BN1,Batch Normalization,None,num_features=84
+DenseBlock1_Layer6_ReLU1,Non-linearity,ReLU,inplace=True
+DenseBlock1_Layer6_Conv1,Convolution,None,"in_channels=84, out_channels=48, kernel_size=1, stride=1, bias=False"
+DenseBlock1_Layer6_BN2,Batch Normalization,None,num_features=48
+DenseBlock1_Layer6_ReLU2,Non-linearity,ReLU,inplace=True
+DenseBlock1_Layer6_Conv2,Convolution,None,"in_channels=48, out_channels=12, kernel_size=3, stride=1, padding=1, bias=False"
+Transition1_BN,Batch Normalization,None,num_features=96
+Transition1_Conv,Convolution,None,"in_channels=96, out_channels=48, kernel_size=1, stride=1, bias=False"
+Transition1_AvgPool,Average Pooling,None,"kernel_size=2, stride=2, padding=0"
+DenseBlock2_Layer1_BN1,Batch Normalization,None,num_features=48
+DenseBlock2_Layer1_ReLU1,Non-linearity,ReLU,inplace=True
+DenseBlock2_Layer1_Conv1,Convolution,None,"in_channels=48, out_channels=48, kernel_size=1, stride=1, bias=False"
+DenseBlock2_Layer1_BN2,Batch Normalization,None,num_features=48
+DenseBlock2_Layer1_ReLU2,Non-linearity,ReLU,inplace=True
+DenseBlock2_Layer1_Conv2,Convolution,None,"in_channels=48, out_channels=12, kernel_size=3, stride=1, padding=1, bias=False"
+DenseBlock2_Layer2_BN1,Batch Normalization,None,num_features=60
+DenseBlock2_Layer2_ReLU1,Non-linearity,ReLU,inplace=True
+DenseBlock2_Layer2_Conv1,Convolution,None,"in_channels=60, out_channels=48, kernel_size=1, stride=1, bias=False"
+DenseBlock2_Layer2_BN2,Batch Normalization,None,num_features=48
+DenseBlock2_Layer2_ReLU2,Non-linearity,ReLU,inplace=True
+DenseBlock2_Layer2_Conv2,Convolution,None,"in_channels=48, out_channels=12, kernel_size=3, stride=1, padding=1, bias=False"
+DenseBlock2_Layer3_BN1,Batch Normalization,None,num_features=72
+DenseBlock2_Layer3_ReLU1,Non-linearity,ReLU,inplace=True
+DenseBlock2_Layer3_Conv1,Convolution,None,"in_channels=72, out_channels=48, kernel_size=1, stride=1, bias=False"
+DenseBlock2_Layer3_BN2,Batch Normalization,None,num_features=48
+DenseBlock2_Layer3_ReLU2,Non-linearity,ReLU,inplace=True
+DenseBlock2_Layer3_Conv2,Convolution,None,"in_channels=48, out_channels=12, kernel_size=3, stride=1, padding=1, bias=False"
+DenseBlock2_Layer4_BN1,Batch Normalization,None,num_features=84
+DenseBlock2_Layer4_ReLU1,Non-linearity,ReLU,inplace=True
+DenseBlock2_Layer4_Conv1,Convolution,None,"in_channels=84, out_channels=48, kernel_size=1, stride=1, bias=False"
+DenseBlock2_Layer4_BN2,Batch Normalization,None,num_features=48
+DenseBlock2_Layer4_ReLU2,Non-linearity,ReLU,inplace=True
+DenseBlock2_Layer4_Conv2,Convolution,None,"in_channels=48, out_channels=12, kernel_size=3, stride=1, padding=1, bias=False"
+DenseBlock2_Layer5_BN1,Batch Normalization,None,num_features=96
+DenseBlock2_Layer5_ReLU1,Non-linearity,ReLU,inplace=True
+DenseBlock2_Layer5_Conv1,Convolution,None,"in_channels=96, out_channels=48, kernel_size=1, stride=1, bias=False"
+DenseBlock2_Layer5_BN2,Batch Normalization,None,num_features=48
+DenseBlock2_Layer5_ReLU2,Non-linearity,ReLU,inplace=True
+DenseBlock2_Layer5_Conv2,Convolution,None,"in_channels=48, out_channels=12, kernel_size=3, stride=1, padding=1, bias=False"
+DenseBlock2_Layer6_BN1,Batch Normalization,None,num_features=108
+DenseBlock2_Layer6_ReLU1,Non-linearity,ReLU,inplace=True
+DenseBlock2_Layer6_Conv1,Convolution,None,"in_channels=108, out_channels=48, kernel_size=1, stride=1, bias=False"
+DenseBlock2_Layer6_BN2,Batch Normalization,None,num_features=48
+DenseBlock2_Layer6_ReLU2,Non-linearity,ReLU,inplace=True
+DenseBlock2_Layer6_Conv2,Convolution,None,"in_channels=48, out_channels=12, kernel_size=3, stride=1, padding=1, bias=False"
+Transition2_BN,Batch Normalization,None,num_features=192
+Transition2_Conv,Convolution,None,"in_channels=192, out_channels=96, kernel_size=1, stride=1, bias=False"
+Transition2_AvgPool,Average Pooling,None,"kernel_size=2, stride=2, padding=0"
+DenseBlock3_Layer1_BN1,Batch Normalization,None,num_features=96
+DenseBlock3_Layer1_ReLU1,Non-linearity,ReLU,inplace=True
+DenseBlock3_Layer1_Conv1,Convolution,None,"in_channels=96, out_channels=48, kernel_size=1, stride=1, bias=False"
+DenseBlock3_Layer1_BN2,Batch Normalization,None,num_features=48
+DenseBlock3_Layer1_ReLU2,Non-linearity,ReLU,inplace=True
+DenseBlock3_Layer1_Conv2,Convolution,None,"in_channels=48, out_channels=12, kernel_size=3, stride=1, padding=1, bias=False"
+DenseBlock3_Layer2_BN1,Batch Normalization,None,num_features=108
+DenseBlock3_Layer2_ReLU1,Non-linearity,ReLU,inplace=True
+DenseBlock3_Layer2_Conv1,Convolution,None,"in_channels=108, out_channels=48, kernel_size=1, stride=1, bias=False"
+DenseBlock3_Layer2_BN2,Batch Normalization,None,num_features=48
+DenseBlock3_Layer2_ReLU2,Non-linearity,ReLU,inplace=True
+DenseBlock3_Layer2_Conv2,Convolution,None,"in_channels=48, out_channels=12, kernel_size=3, stride=1, padding=1, bias=False"
+DenseBlock3_Layer3_BN1,Batch Normalization,None,num_features=120
+DenseBlock3_Layer3_ReLU1,Non-linearity,ReLU,inplace=True
+DenseBlock3_Layer3_Conv1,Convolution,None,"in_channels=120, out_channels=48, kernel_size=1, stride=1, bias=False"
+DenseBlock3_Layer3_BN2,Batch Normalization,None,num_features=48
+DenseBlock3_Layer3_ReLU2,Non-linearity,ReLU,inplace=True
+DenseBlock3_Layer3_Conv2,Convolution,None,"in_channels=48, out_channels=12, kernel_size=3, stride=1, padding=1, bias=False"
+DenseBlock3_Layer4_BN1,Batch Normalization,None,num_features=132
+DenseBlock3_Layer4_ReLU1,Non-linearity,ReLU,inplace=True
+DenseBlock3_Layer4_Conv1,Convolution,None,"in_channels=132, out_channels=48, kernel_size=1, stride=1, bias=False"
+DenseBlock3_Layer4_BN2,Batch Normalization,None,num_features=48
+DenseBlock3_Layer4_ReLU2,Non-linearity,ReLU,inplace=True
+DenseBlock3_Layer4_Conv2,Convolution,None,"in_channels=48, out_channels=12, kernel_size=3, stride=1, padding=1, bias=False"
+DenseBlock3_Layer5_BN1,Batch Normalization,None,num_features=144
+DenseBlock3_Layer5_ReLU1,Non-linearity,ReLU,inplace=True
+DenseBlock3_Layer5_Conv1,Convolution,None,"in_channels=144, out_channels=48, kernel_size=1, stride=1, bias=False"
+DenseBlock3_Layer5_BN2,Batch Normalization,None,num_features=48
+DenseBlock3_Layer5_ReLU2,Non-linearity,ReLU,inplace=True
+DenseBlock3_Layer5_Conv2,Convolution,None,"in_channels=48, out_channels=12, kernel_size=3, stride=1, padding=1, bias=False"
+DenseBlock3_Layer6_BN1,Batch Normalization,None,num_features=156
+DenseBlock3_Layer6_ReLU1,Non-linearity,ReLU,inplace=True
+DenseBlock3_Layer6_Conv1,Convolution,None,"in_channels=156, out_channels=48, kernel_size=1, stride=1, bias=False"
+DenseBlock3_Layer6_BN2,Batch Normalization,None,num_features=48
+DenseBlock3_Layer6_ReLU2,Non-linearity,ReLU,inplace=True
+DenseBlock3_Layer6_Conv2,Convolution,None,"in_channels=48, out_channels=12, kernel_size=3, stride=1, padding=1, bias=False"
+Final_BN,Batch Normalization,None,num_features=264
+Final_ReLU,Non-linearity,ReLU,inplace=True
+AvgPool,Adaptive Average Pooling,None,output_size=1
+FC,Fully Connected,None,"in_features=264, out_features=10, bias=True"
